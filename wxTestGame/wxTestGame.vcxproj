@@ -146,14 +146,41 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="AppFrame.h" />
+    <ClInclude Include="character.h" />
+    <ClInclude Include="drawEngine.h" />
+    <ClInclude Include="enemy.h" />
+    <ClInclude Include="fireball.h" />
+    <ClInclude Include="level.h" />
+    <ClInclude Include="mage.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="resource1.h" />
+    <ClInclude Include="resource2.h" />
+    <ClInclude Include="sprite.h" />
     <ClInclude Include="stdwx.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AppFrame.cpp" />
+    <ClCompile Include="character.cpp" />
+    <ClCompile Include="drawEngine.cpp" />
+    <ClCompile Include="enemy.cpp" />
+    <ClCompile Include="fireball.cpp" />
+    <ClCompile Include="level.cpp" />
+    <ClCompile Include="mage.cpp" />
+    <ClCompile Include="sprite.cpp" />
     <ClCompile Include="stdwx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="TestGame.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="wxTestGame2.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="emptyTile.bmp" />
+    <Image Include="enemyTile.bmp" />
+    <Image Include="fireballTile.bmp" />
+    <Image Include="playerTile.bmp" />
+    <Image Include="wallTile.bmp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
